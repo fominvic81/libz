@@ -23,8 +23,8 @@ pub fn build(b: *std.build.Builder) void {
         "gzlib.c",
         "gzread.c",
         "gzwrite.c",
-    }, &.{});
-    lib.install();
+    }, &.{"-std=c89"});
     lib.installHeader("zconf.h", "zconf.h");
     lib.installHeader("zlib.h", "zlib.h");
+    b.installArtifact(lib);
 }
