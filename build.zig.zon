@@ -1,5 +1,6 @@
 .{
-    .name = "libz",
+    .name = .libz,
+    .fingerprint = 0xf0a9f60f1f704384,
     .version = "1.3.0",
     .paths = .{
         "LICENSE",
